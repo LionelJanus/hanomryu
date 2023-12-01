@@ -1,0 +1,514 @@
+@charset "UTF-8";
+/*Animaciones*/
+@keyframes Logo {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Header*/
+.portada {
+  background-color: black;
+}
+.portada .video_portada {
+  display: flex;
+  justify-content: center;
+}
+
+/*Componente NavBar*/
+.navbar {
+  padding: 0px;
+  background-color: black;
+  border-bottom: solid 4px red;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url(../iconos/menu-hamburguesa.webp);
+}
+.navbar .navbar-collapse {
+  align-items: end;
+  justify-content: space-between;
+}
+.navbar .logo_portada {
+  animation: Logo 2s ease 0s 1 normal forwards;
+  max-width: 420px;
+  width: 100%;
+  padding: 0px;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .navbar .logo_portada {
+    max-width: 100%;
+  }
+}
+.navbar .nav-link {
+  color: white;
+  margin-right: 50px;
+  font-size: 24px;
+}
+.navbar .nav-link:hover {
+  color: rgba(249, 6, 6, 0.8);
+}
+.navbar .navbar-nav .nav-link.active {
+  color: rgba(249, 6, 6, 0.8);
+  background-image: url(../iconos/casa.webp);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 30px 40px;
+}
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link.show {
+  color: red;
+}
+
+.dropdown-menu {
+  --bs-body-bg:black;
+  --bs-dropdown-link-hover-bg:rgba(156, 154, 154, 0.8);
+}
+
+.dropdown-item {
+  color: rgba(249, 6, 6, 0.8);
+  font-weight: bold;
+}
+
+/*Main*/
+main {
+  background-image: url(../imagenes/7880606.webp);
+  width: 100%;
+  height: auto;
+}
+
+/*Componente Footer*/
+.seccion-oscura {
+  background-color: black;
+}
+.seccion-oscura img .footer-logo {
+  background-color: black;
+  width: 60px;
+  height: 50px;
+}
+.seccion-oscura .iconos-redes-sociales img {
+  width: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.seccion-oscura .iconos-redes-sociales img {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.seccion-oscura .derechos-de-autor {
+  color: white;
+}
+.seccion-oscura .desarrollador {
+  color: white;
+}
+
+/*Componente de Contacto*/
+.contacto .container {
+  align-items: center;
+  background-color: gray;
+  height: 150px;
+  max-width: 420px;
+  width: 90%;
+  border-radius: 20px;
+}
+.contacto .seccion-titulo {
+  color: white;
+}
+.contacto .descripcion {
+  color: white;
+  font-size: 24;
+}
+.contacto .boton {
+  display: inline-block;
+}
+
+/*COmponente Whatsaap*/
+.boton_wsp {
+  width: 100vh;
+  position: fixed;
+  top: 550px;
+  right: 10px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .boton_wsp {
+    top: 650px;
+  }
+}
+.boton_wsp img {
+  width: 40px;
+  max-width: 100vh;
+}
+
+/********************PAGINAS********************/
+.seccion_historia {
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+.seccion_historia .texto_historia {
+  padding: 30px;
+  margin-left: 50px;
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+}
+.seccion_historia .imagen_1 {
+  width: 200px;
+  margin-left: 60px;
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main .seccion_escuela {
+  background-color: white;
+  opacity: 80%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+main .seccion_escuela .texto_escuela {
+  margin-left: 10px;
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+}
+main .seccion_escuela .imagen_2 {
+  width: 300px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+main .seccion_escuela .imagen_3 {
+  max-width: 100%;
+  justify-self: center;
+}
+main .seccion_escuela .texto_danes {
+  font-size: 20px;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+#carouselExampleIndicators {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+
+.article {
+  opacity: 70%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0fr repeat(3, 2fr) 0fr;
+  grid-template-rows: repeat(0, 2fr) 0fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  background-color: white;
+}
+.article .box1 {
+  grid-area: 1/2/3/3;
+}
+.article .box2 {
+  grid-area: 1/3/3/5;
+}
+
+.section_filosofia {
+  opacity: 90%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
+  background-color: rgb(168, 166, 166);
+}
+@media (max-width: 768px) {
+  .section_filosofia {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.section_filosofia .filosofia {
+  align-items: center;
+  display: flex;
+  margin: 10px;
+}
+.section_filosofia .title_filosofia {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.section_filosofia .parrafo_filosofia {
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  margin-right: 10px;
+}
+.section_filosofia li::before {
+  content: "►";
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.objetivo {
+  align-items: center;
+  display: flex;
+  margin: 10px;
+}
+
+.title_objetivos {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.parrafo_objetivo {
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  margin-right: 10px;
+}
+.parrafo_objetivo li::before {
+  content: "►";
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.galeria_principal {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-row-gap: 0px;
+}
+@media (max-width: 768px) {
+  .galeria_principal {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.galeria_principal .slider {
+  margin: 30px;
+  margin: auto;
+  padding: 20px;
+}
+.galeria_principal .box_cards {
+  margin: 15px 10px;
+}
+
+.instructores {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  opacity: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+.instructores .card {
+  cursor: pointer; /* Con posición */
+}
+
+.woma {
+  width: 100%;
+  margin: auto;
+  grid-area: 1/3/3/1;
+}
+
+.waks {
+  width: 100%;
+  margin: auto;
+  grid-area: 1/7/3/5;
+}
+
+.div1 {
+  margin: auto;
+  padding-top: 50px;
+}
+
+.div2 {
+  margin: auto;
+}
+
+.div3 {
+  margin: auto;
+}
+
+.div4 {
+  margin: auto;
+}
+
+.div6 {
+  margin: auto;
+}
+
+.div7 {
+  margin: auto;
+}
+
+.div8 {
+  margin: auto;
+}
+
+.div9 {
+  margin: auto;
+}
+
+.div10 {
+  margin: auto;
+}
+
+.div11 {
+  margin: auto;
+}
+
+.div12 {
+  margin: auto;
+}
+
+.div13 {
+  margin: auto;
+}
+
+.div14 {
+  margin: auto;
+}
+
+.div1 {
+  grid-area: 1/3/3/5;
+}
+
+.div2 {
+  grid-area: 3/3/5/5;
+}
+
+.div3 {
+  grid-area: 5/1/5/3;
+}
+
+.div4 {
+  grid-area: 5/7/5/5;
+}
+
+.div5 {
+  grid-area: 7/3/5/5;
+}
+
+.div6 {
+  grid-area: 6/3/7/5;
+}
+
+.div7 {
+  grid-area: 6/1/7/3;
+}
+
+.div8 {
+  grid-area: 5/5/9/7;
+}
+
+.div9 {
+  grid-area: 7/3/9/5;
+}
+
+.div10 {
+  grid-area: 7/5/9/7;
+}
+
+.div11 {
+  grid-area: 8/1/9/3;
+}
+
+.div12 {
+  grid-area: 9/3/9/5;
+}
+
+.div13 {
+  grid-area: 9/5/9/7;
+}
+
+.div14 {
+  grid-area: 9/1/10/3;
+}
+
+.div15 {
+  grid-area: 10/3/10/5;
+}
+
+.div16 {
+  grid-area: 12/1/11/3;
+}
+
+.div17 {
+  grid-area: 12/3/11/5;
+}
+
+.div18 {
+  grid-area: 12/5/11/7;
+}
+
+.div19 {
+  grid-area: 13/1/12/3;
+}
+
+.div20 {
+  grid-area: 13/3/12/5;
+}
+
+.div21 {
+  grid-area: 13/5/12/7;
+}
+
+.seccion_centros {
+  padding: 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+@media (max-width: 768px) {
+  .seccion_centros {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.seccion_centros .mapouter {
+  text-align-last: center;
+}
+.seccion_centros strong {
+  background-color: beige;
+  width: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

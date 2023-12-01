@@ -1,0 +1,21 @@
+.boton_wsp{
+    width: 100vh;
+    position: fixed;
+    top: 550px;
+    right: 10px;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+
+    @media(max-width: 768px){
+        top: 650px;
+      }
+
+    img{
+        width: 40px;
+        max-width: 100vh;
+         
+}
+	
+}

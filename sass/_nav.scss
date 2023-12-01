@@ -1,0 +1,65 @@
+.navbar {
+    padding:0px;
+    background-color: black;
+    border-bottom: solid 4px red;
+
+    .navbar-toggler-icon {
+        background-image: url(../iconos/menu-hamburguesa.webp);
+      }
+      
+      .navbar-collapse {
+        align-items: end;
+        justify-content: space-between;
+      }
+
+      .logo_portada {
+        
+        animation: Logo 2s ease 0s 1 normal forwards;
+        max-width: 420px;
+        width: 100%;
+        padding: 0px;
+        margin-left: 10px;
+        @media(max-width: 768px){
+          max-width: 100%;
+        }
+      }
+      
+      .nav-link {
+        color: white;
+        margin-right: 50px;
+        font-size: 24px;
+        
+      }
+
+      .nav-link:hover{
+        color: rgb(249 6 6 / 80%);
+        
+      }
+      
+      .navbar-nav .nav-link.active  {
+        color:rgb(249 6 6 / 80%);
+        background-image: url(../iconos/casa.webp);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+        padding: 30px 40px;
+      }
+      .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: red;
+      }
+      }   
+
+      .dropdown-menu{
+        --bs-body-bg:black;
+        --bs-dropdown-link-hover-bg:rgba(156, 154, 154, 0.8);
+        
+      }
+      
+      .dropdown-item{
+        color:rgb(249 6 6 / 80%);
+        font-weight: bold;
+      }
+
+  
+  

@@ -1,0 +1,29 @@
+/*Animaciones*/
+@import "base";
+
+/*Header*/
+ @import "header";
+
+/*Componente NavBar*/
+@import "nav";
+
+/*Main*/
+@import "main";
+
+/*Componente Footer*/
+@import "footer";
+
+/*Componente de Contacto*/
+@import "contacto";
+
+/*COmponente Whatsaap*/
+@import "whatsaap";
+
+/********************PAGINAS********************/
+@import "../sass/historia/historia";
+@import "../sass/escuela/escuela";
+@import "../sass/galeria/galeria";
+@import "../sass/index/index";
+@import "../sass/instructores/instructores";
+@import "../sass/centros/centros";
+  
