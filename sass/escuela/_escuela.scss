@@ -1,6 +1,6 @@
 main{
 
-  h1{
+  .titulo-escuela{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -14,6 +14,7 @@ main{
     grid-template-columns: 6fr 1fr;
 
     @media(max-width: 768px){
+      grid-template-columns: repeat( 1, 1fr);
       
   }
 

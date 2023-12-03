@@ -140,7 +140,7 @@ main {
 .boton_wsp {
   width: 100vh;
   position: fixed;
-  top: 550px;
+  top: 850px;
   right: 10px;
   width: 100%;
   z-index: 100;
@@ -161,8 +161,15 @@ main {
 .seccion_historia {
   background-color: white;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: 5fr 1fr;
+}
+@media (max-width: 768px) {
+  .seccion_historia {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.seccion_historia .titulo-historia {
+  display: flex;
+  justify-content: center;
 }
 .seccion_historia .texto_historia {
   padding: 30px;
@@ -171,12 +178,8 @@ main {
   color: black;
   font-size: 20px;
 }
-.seccion_historia .imagen_1 {
-  width: 200px;
-  margin-left: 60px;
-}
 
-main h1 {
+main .titulo-escuela {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -187,6 +190,11 @@ main .seccion_escuela {
   border-radius: 20px;
   display: grid;
   grid-template-columns: 6fr 1fr;
+}
+@media (max-width: 768px) {
+  main .seccion_escuela {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 main .seccion_escuela .texto_escuela {
   margin-left: 10px;
