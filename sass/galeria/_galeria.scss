@@ -13,14 +13,18 @@
       justify-content: center;
     }
   }
-  .galeria {
+ .galeria {
     max-width       : 100%;
     line-height     : 0;
     padding         : var(--separa);
     padding-right   : 0;
     display         : flex;
-    flex-wrap       : wrap;
+    // flex-wrap       : wrap;
     justify-content : space-around;
+    margin: 20px 0px;
+    padding: 10px;
+    border: solid 3px red;
+    column-gap: 10px;
   }
   .item {
     display: flex;
